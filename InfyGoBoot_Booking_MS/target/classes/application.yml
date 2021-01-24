@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: InfyGoBookingMS
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp      
+ 
+  datasource:
+    username: root
+    password: mech156009
+    url: jdbc:mysql://localhost:3306/infygo_booking_ms
+  jpa:
+      show-sql: true
+        
+      properties:
+        hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+server:
+  servlet.context-path: /InfyGoBookingMS
+  port: 8004
+  
+  
+logging:
+  file: Errorlog.log
+  level:
+    root: info
+    com.infoys.ars: info
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss,SSS} %5p [%t] %c [%M] - %m%n"
