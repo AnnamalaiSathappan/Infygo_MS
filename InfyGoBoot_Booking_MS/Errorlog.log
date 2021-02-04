@@ -1,219 +1,150 @@
-2021-01-24 15:06:20  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStarting] - Starting InfyGoBootBookingMSApplication on DESKTOP-DMHO0MM with PID 7200 (E:\SpringMicroservicesWorkspace\InfyGoBoot_Booking_MS\target\classes started by Annamalai in E:\SpringMicroservicesWorkspace\InfyGoBoot_Booking_MS)
-2021-01-24 15:06:20  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
-2021-01-24 15:06:21  INFO [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [prepareRefresh] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f9f7dcf: startup date [Sun Jan 24 20:36:21 IST 2021]; root of context hierarchy
-2021-01-24 15:06:32  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate [multipleStoresDetected] - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-01-24 15:06:33  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate [multipleStoresDetected] - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-01-24 15:06:33  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [isStrictRepositoryCandidate] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.infosys.irs.repository.FlightsRepository.
-2021-01-24 15:06:33  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [isStrictRepositoryCandidate] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.infosys.irs.repository.PassengerRepository.
-2021-01-24 15:06:33  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [isStrictRepositoryCandidate] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.infosys.irs.repository.TicketRepository.
-2021-01-24 15:06:36  INFO [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [postProcessAfterInitialization] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1ef64b04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-01-24 15:06:41  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [initialize] - Tomcat initialized with port(s): 8004 (http)
-2021-01-24 15:06:41  INFO [main] org.apache.catalina.core.StandardService [log] - Starting service [Tomcat]
-2021-01-24 15:06:41  INFO [main] org.apache.catalina.core.StandardEngine [log] - Starting Servlet Engine: Apache Tomcat/8.5.29
-2021-01-24 15:06:41  INFO [localhost-startStop-1] org.apache.catalina.core.AprLifecycleListener [log] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Annamalai\AppData\Local\Microsoft\WindowsApps;C:\Users\Annamalai\AppData\Roaming\npm;C:\Users\Annamalai\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Annamalai\Downloads\eclipse-jee-2019-03-R-win32-x86_64\eclipse;;.]
-2021-01-24 15:06:45  INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner [log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2021-01-24 15:06:45  INFO [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/InfyGoBookingMS] [log] - Initializing Spring embedded WebApplicationContext
-2021-01-24 15:06:45  INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader [prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 23665 ms
-2021-01-24 15:06:46  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [addRegistration] - Servlet dispatcherServlet mapped to [/]
-2021-01-24 15:06:46  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'characterEncodingFilter' to: [/*]
-2021-01-24 15:06:46  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2021-01-24 15:06:46  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2021-01-24 15:06:46  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'requestContextFilter' to: [/*]
-2021-01-24 15:06:46  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'corsFilter' to: [/*]
-2021-01-24 15:06:49  INFO [main] com.zaxxer.hikari.HikariDataSource [getConnection] - HikariPool-1 - Starting...
-2021-01-24 15:06:59  INFO [main] com.zaxxer.hikari.HikariDataSource [getConnection] - HikariPool-1 - Start completed.
-2021-01-24 15:07:00  INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [createNativeEntityManagerFactory] - Building JPA container EntityManagerFactory for persistence unit 'default'
-2021-01-24 15:07:00  INFO [main] org.hibernate.jpa.internal.util.LogHelper [logPersistenceUnitInformation] - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2021-01-24 15:07:04  INFO [main] org.hibernate.Version [logVersion] - HHH000412: Hibernate Core {5.2.16.Final}
-2021-01-24 15:07:04  INFO [main] org.hibernate.cfg.Environment [<clinit>] - HHH000206: hibernate.properties not found
-2021-01-24 15:07:06  INFO [main] org.hibernate.annotations.common.Version [<clinit>] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2021-01-24 15:07:08  INFO [main] org.hibernate.dialect.Dialect [<init>] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-01-24 15:07:42  WARN [main] org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [handleException] - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277)
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1761)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Specified key was too long; max key length is 1000 bytes
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
-	at com.mysql.jdbc.Util.getInstance(Util.java:408)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2440)
-	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
-	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
-	... 34 common frames omitted
-2021-01-24 15:07:50  WARN [main] org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [handleException] - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249)
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1761)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
-	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14)
-Caused by: java.sql.SQLException: Table 'passenger_details' is marked as crashed and should be repaired
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2440)
-	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845)
-	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745)
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
-	... 33 common frames omitted
-2021-01-24 15:07:50  INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [buildNativeEntityManagerFactory] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-01-24 15:07:57  INFO [main] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [initiateService] - HHH000397: Using ASTQueryTranslatorFactory
-2021-01-24 15:07:59  INFO [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [registerHandler] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-24 15:08:01  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [initControllerAdviceCache] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f9f7dcf: startup date [Sun Jan 24 20:36:21 IST 2021]; root of context hierarchy
-2021-01-24 15:08:01  WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [openEntityManagerInViewInterceptor] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-01-24 15:08:02  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [register] - Mapped "{[/book/{flightId}/{username}],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.infosys.irs.dto.BookingDetails> com.infosys.irs.controller.BookingController.bookFlight(java.lang.String,com.infosys.irs.dto.PassengerDetails,java.lang.String,org.springframework.validation.Errors) throws com.infosys.irs.exception.InfyGoServiceException,com.infosys.irs.exception.ARSServiceException
-2021-01-24 15:08:02  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [register] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2021-01-24 15:08:02  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [register] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2021-01-24 15:08:02  INFO [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [registerHandler] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-24 15:08:02  INFO [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [registerHandler] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-24 15:08:06  INFO [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [afterSingletonsInstantiated] - Registering beans for JMX exposure on startup
-2021-01-24 15:08:06  INFO [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [autodetect] - Bean with name 'dataSource' has been autodetected for JMX exposure
-2021-01-24 15:08:06  INFO [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [registerBeanInstance] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2021-01-24 15:08:06  INFO [main] org.springframework.context.support.DefaultLifecycleProcessor [start] - Starting beans in phase 2147483647
-2021-01-24 15:08:07  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [start] - Tomcat started on port(s): 8004 (http) with context path '/InfyGoBookingMS'
-2021-01-24 15:08:07  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStarted] - Started InfyGoBootBookingMSApplication in 114.419 seconds (JVM running for 124.22)
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [shutdown] - Application shutdown requested.
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [doClose] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f9f7dcf: startup date [Sun Jan 24 20:36:21 IST 2021]; root of context hierarchy
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] org.springframework.context.support.DefaultLifecycleProcessor [stop] - Stopping beans in phase 2147483647
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [destroy] - Unregistering JMX-exposed beans on shutdown
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [unregisterBeans] - Unregistering JMX-exposed beans
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [destroy] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource [close] - HikariPool-1 - Shutdown initiated...
-2021-01-24 15:08:56  INFO [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource [close] - HikariPool-1 - Shutdown completed.
-2021-01-24 15:09:32  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStarting] - Starting InfyGoBootBookingMSApplication on DESKTOP-DMHO0MM with PID 6400 (E:\SpringMicroservicesWorkspace\InfyGoBoot_Booking_MS\target\classes started by Annamalai in E:\SpringMicroservicesWorkspace\InfyGoBoot_Booking_MS)
-2021-01-24 15:09:32  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
-2021-01-24 15:09:32  INFO [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [prepareRefresh] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d5d943d: startup date [Sun Jan 24 20:39:32 IST 2021]; root of context hierarchy
-2021-01-24 15:09:36  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate [multipleStoresDetected] - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-01-24 15:09:36  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate [multipleStoresDetected] - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-01-24 15:09:36  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [isStrictRepositoryCandidate] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.infosys.irs.repository.FlightsRepository.
-2021-01-24 15:09:36  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [isStrictRepositoryCandidate] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.infosys.irs.repository.PassengerRepository.
-2021-01-24 15:09:36  INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [isStrictRepositoryCandidate] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.infosys.irs.repository.TicketRepository.
-2021-01-24 15:09:37  INFO [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [postProcessAfterInitialization] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e48af1e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-01-24 15:09:38  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [initialize] - Tomcat initialized with port(s): 8004 (http)
-2021-01-24 15:09:38  INFO [main] org.apache.catalina.core.StandardService [log] - Starting service [Tomcat]
-2021-01-24 15:09:38  INFO [main] org.apache.catalina.core.StandardEngine [log] - Starting Servlet Engine: Apache Tomcat/8.5.29
-2021-01-24 15:09:38  INFO [localhost-startStop-1] org.apache.catalina.core.AprLifecycleListener [log] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Annamalai\AppData\Local\Microsoft\WindowsApps;C:\Users\Annamalai\AppData\Roaming\npm;C:\Users\Annamalai\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Annamalai\Downloads\eclipse-jee-2019-03-R-win32-x86_64\eclipse;;.]
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner [log] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/InfyGoBookingMS] [log] - Initializing Spring embedded WebApplicationContext
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader [prepareWebApplicationContext] - Root WebApplicationContext: initialization completed in 7336 ms
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.ServletRegistrationBean [addRegistration] - Servlet dispatcherServlet mapped to [/]
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'characterEncodingFilter' to: [/*]
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'requestContextFilter' to: [/*]
-2021-01-24 15:09:39  INFO [localhost-startStop-1] org.springframework.boot.web.servlet.FilterRegistrationBean [configure] - Mapping filter: 'corsFilter' to: [/*]
-2021-01-24 15:09:41  INFO [main] com.zaxxer.hikari.HikariDataSource [getConnection] - HikariPool-1 - Starting...
-2021-01-24 15:09:50  INFO [main] com.zaxxer.hikari.HikariDataSource [getConnection] - HikariPool-1 - Start completed.
-2021-01-24 15:09:50  INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [createNativeEntityManagerFactory] - Building JPA container EntityManagerFactory for persistence unit 'default'
-2021-01-24 15:09:50  INFO [main] org.hibernate.jpa.internal.util.LogHelper [logPersistenceUnitInformation] - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2021-01-24 15:09:52  INFO [main] org.hibernate.Version [logVersion] - HHH000412: Hibernate Core {5.2.16.Final}
-2021-01-24 15:09:52  INFO [main] org.hibernate.cfg.Environment [<clinit>] - HHH000206: hibernate.properties not found
-2021-01-24 15:09:52  INFO [main] org.hibernate.annotations.common.Version [<clinit>] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2021-01-24 15:09:54  INFO [main] org.hibernate.dialect.Dialect [<init>] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-01-24 15:09:59  INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [buildNativeEntityManagerFactory] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-01-24 15:10:00  INFO [main] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [initiateService] - HHH000397: Using ASTQueryTranslatorFactory
-2021-01-24 15:10:01  INFO [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [registerHandler] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-24 15:10:01  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [initControllerAdviceCache] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d5d943d: startup date [Sun Jan 24 20:39:32 IST 2021]; root of context hierarchy
-2021-01-24 15:10:01  WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [openEntityManagerInViewInterceptor] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-01-24 15:10:02  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [register] - Mapped "{[/book/{flightId}/{username}],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<com.infosys.irs.dto.BookingDetails> com.infosys.irs.controller.BookingController.bookFlight(java.lang.String,com.infosys.irs.dto.PassengerDetails,java.lang.String,org.springframework.validation.Errors) throws com.infosys.irs.exception.InfyGoServiceException,com.infosys.irs.exception.ARSServiceException
-2021-01-24 15:10:02  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [register] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2021-01-24 15:10:02  INFO [main] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [register] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2021-01-24 15:10:02  INFO [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [registerHandler] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-24 15:10:02  INFO [main] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [registerHandler] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2021-01-24 15:10:03  INFO [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [afterSingletonsInstantiated] - Registering beans for JMX exposure on startup
-2021-01-24 15:10:03  INFO [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [autodetect] - Bean with name 'dataSource' has been autodetected for JMX exposure
-2021-01-24 15:10:03  INFO [main] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [registerBeanInstance] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2021-01-24 15:10:03  INFO [main] org.springframework.context.support.DefaultLifecycleProcessor [start] - Starting beans in phase 2147483647
-2021-01-24 15:10:03  INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [start] - Tomcat started on port(s): 8004 (http) with context path '/InfyGoBookingMS'
-2021-01-24 15:10:03  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStarted] - Started InfyGoBootBookingMSApplication in 34.75 seconds (JVM running for 36.091)
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [shutdown] - Application shutdown requested.
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [doClose] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d5d943d: startup date [Sun Jan 24 20:39:32 IST 2021]; root of context hierarchy
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] org.springframework.context.support.DefaultLifecycleProcessor [stop] - Stopping beans in phase 2147483647
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [destroy] - Unregistering JMX-exposed beans on shutdown
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [unregisterBeans] - Unregistering JMX-exposed beans
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [destroy] - Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource [close] - HikariPool-1 - Shutdown initiated...
-2021-01-24 15:14:32  INFO [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource [close] - HikariPool-1 - Shutdown completed.
+2021-01-29 04:18:52  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Fetching config from server at : http://localhost:8888
+2021-01-29 04:18:56  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-01-29 04:18:56  WARN [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [locate] - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/InfyGoBookingMS/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-01-29 04:18:56  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+2021-01-29 04:18:56 ERROR [main] org.springframework.boot.SpringApplication [reportFailure] - Application run failed
+java.lang.AbstractMethodError: null
+	at org.springframework.core.OrderComparator.findOrder(OrderComparator.java:142) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.annotation.AnnotationAwareOrderComparator.findOrder(AnnotationAwareOrderComparator.java:65) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:125) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:113) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.doCompare(OrderComparator.java:82) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.compare(OrderComparator.java:68) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at java.util.TimSort.countRunAndMakeAscending(Unknown Source) ~[na:1.8.0_241]
+	at java.util.TimSort.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.Arrays.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.ArrayList.sort(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.boot.SpringApplication.asUnmodifiableOrderedSet(SpringApplication.java:1322) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.getListeners(SpringApplication.java:1231) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:85) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:66) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:391) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14) [classes/:na]
+2021-01-29 04:33:22  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Fetching config from server at : http://localhost/1111
+2021-01-29 04:33:25  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Connect Timeout Exception on Url - http://localhost/1111. Will be trying the next url if available
+2021-01-29 04:33:25  WARN [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [locate] - Could not locate PropertySource: I/O error on GET request for "http://localhost/1111/InfyGoBookingMS/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-01-29 04:33:25  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+2021-01-29 04:33:25 ERROR [main] org.springframework.boot.SpringApplication [reportFailure] - Application run failed
+java.lang.AbstractMethodError: null
+	at org.springframework.core.OrderComparator.findOrder(OrderComparator.java:142) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.annotation.AnnotationAwareOrderComparator.findOrder(AnnotationAwareOrderComparator.java:65) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:125) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:113) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.doCompare(OrderComparator.java:82) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.compare(OrderComparator.java:68) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at java.util.TimSort.countRunAndMakeAscending(Unknown Source) ~[na:1.8.0_241]
+	at java.util.TimSort.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.Arrays.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.ArrayList.sort(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.boot.SpringApplication.asUnmodifiableOrderedSet(SpringApplication.java:1322) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.getListeners(SpringApplication.java:1231) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:85) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:66) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:391) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14) [classes/:na]
+2021-01-29 04:34:34  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Fetching config from server at : http://localhost/1111/InfyGoBookingMS
+2021-01-29 04:34:37  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Connect Timeout Exception on Url - http://localhost/1111/InfyGoBookingMS. Will be trying the next url if available
+2021-01-29 04:34:37  WARN [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [locate] - Could not locate PropertySource: I/O error on GET request for "http://localhost/1111/InfyGoBookingMS/InfyGoBookingMS/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-01-29 04:34:37  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+2021-01-29 04:34:37 ERROR [main] org.springframework.boot.SpringApplication [reportFailure] - Application run failed
+java.lang.AbstractMethodError: null
+	at org.springframework.core.OrderComparator.findOrder(OrderComparator.java:142) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.annotation.AnnotationAwareOrderComparator.findOrder(AnnotationAwareOrderComparator.java:65) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:125) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:113) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.doCompare(OrderComparator.java:82) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.compare(OrderComparator.java:68) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at java.util.TimSort.countRunAndMakeAscending(Unknown Source) ~[na:1.8.0_241]
+	at java.util.TimSort.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.Arrays.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.ArrayList.sort(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.boot.SpringApplication.asUnmodifiableOrderedSet(SpringApplication.java:1322) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.getListeners(SpringApplication.java:1231) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:85) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:66) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:391) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14) [classes/:na]
+2021-01-29 04:49:49  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Fetching config from server at : http://localhost/1111
+2021-01-29 04:49:52  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Connect Timeout Exception on Url - http://localhost/1111. Will be trying the next url if available
+2021-01-29 04:49:52  WARN [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [locate] - Could not locate PropertySource: I/O error on GET request for "http://localhost/1111/InfyGoBookingMS/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2021-01-29 04:49:52  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+2021-01-29 04:49:52 ERROR [main] org.springframework.boot.SpringApplication [reportFailure] - Application run failed
+java.lang.AbstractMethodError: null
+	at org.springframework.core.OrderComparator.findOrder(OrderComparator.java:142) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.annotation.AnnotationAwareOrderComparator.findOrder(AnnotationAwareOrderComparator.java:65) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:125) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:113) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.doCompare(OrderComparator.java:82) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.compare(OrderComparator.java:68) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at java.util.TimSort.countRunAndMakeAscending(Unknown Source) ~[na:1.8.0_241]
+	at java.util.TimSort.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.Arrays.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.ArrayList.sort(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.boot.SpringApplication.asUnmodifiableOrderedSet(SpringApplication.java:1322) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.getListeners(SpringApplication.java:1231) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:85) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:66) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:391) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14) [classes/:na]
+2021-01-29 04:52:45  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Fetching config from server at : http://localhost:1111
+2021-01-29 04:52:46  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [log] - Located environment: name=InfyGoBookingMS, profiles=[default], label=null, version=2c1ca539d045a33ccf0c9ab5d2ea7db1ac0c01be, state=null
+2021-01-29 04:52:46  INFO [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [initialize] - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/AnnamalaiSathappan/config-server/file:C:\Users\ANNAMA~1\AppData\Local\Temp\config-repo-706836264609827820\InfyGoBookingMS.yml'}, MapPropertySource {name='https://github.com/AnnamalaiSathappan/config-server/file:C:\Users\ANNAMA~1\AppData\Local\Temp\config-repo-706836264609827820\application.yml'}]}
+2021-01-29 04:52:46  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+2021-01-29 04:52:46 ERROR [main] org.springframework.boot.SpringApplication [reportFailure] - Application run failed
+java.lang.AbstractMethodError: null
+	at org.springframework.core.OrderComparator.findOrder(OrderComparator.java:142) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.annotation.AnnotationAwareOrderComparator.findOrder(AnnotationAwareOrderComparator.java:65) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:125) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:113) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.doCompare(OrderComparator.java:82) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.compare(OrderComparator.java:68) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at java.util.TimSort.countRunAndMakeAscending(Unknown Source) ~[na:1.8.0_241]
+	at java.util.TimSort.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.Arrays.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.ArrayList.sort(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.boot.SpringApplication.asUnmodifiableOrderedSet(SpringApplication.java:1322) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.getListeners(SpringApplication.java:1231) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:85) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:66) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:391) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14) [classes/:na]
+2021-01-29 04:55:00  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [getRemoteEnvironment] - Fetching config from server at : http://localhost:1111
+2021-01-29 04:55:04  INFO [main] org.springframework.cloud.config.client.ConfigServicePropertySourceLocator [log] - Located environment: name=InfyGoBookingMS, profiles=[default], label=null, version=2c1ca539d045a33ccf0c9ab5d2ea7db1ac0c01be, state=null
+2021-01-29 04:55:04  INFO [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration [initialize] - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/AnnamalaiSathappan/config-server/file:C:\Users\ANNAMA~1\AppData\Local\Temp\config-repo-715480869723174765\InfyGoBookingMS.yml'}, MapPropertySource {name='https://github.com/AnnamalaiSathappan/config-server/file:C:\Users\ANNAMA~1\AppData\Local\Temp\config-repo-715480869723174765\application.yml'}]}
+2021-01-29 04:55:05  INFO [main] com.infosys.irs.InfyGoBootBookingMSApplication [logStartupProfileInfo] - No active profile set, falling back to default profiles: default
+2021-01-29 04:55:05 ERROR [main] org.springframework.boot.SpringApplication [reportFailure] - Application run failed
+java.lang.AbstractMethodError: null
+	at org.springframework.core.OrderComparator.findOrder(OrderComparator.java:142) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.annotation.AnnotationAwareOrderComparator.findOrder(AnnotationAwareOrderComparator.java:65) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:125) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.getOrder(OrderComparator.java:113) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.doCompare(OrderComparator.java:82) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.OrderComparator.compare(OrderComparator.java:68) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at java.util.TimSort.countRunAndMakeAscending(Unknown Source) ~[na:1.8.0_241]
+	at java.util.TimSort.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.Arrays.sort(Unknown Source) ~[na:1.8.0_241]
+	at java.util.ArrayList.sort(Unknown Source) ~[na:1.8.0_241]
+	at org.springframework.boot.SpringApplication.asUnmodifiableOrderedSet(SpringApplication.java:1322) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.getListeners(SpringApplication.java:1231) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:85) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:66) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:391) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.infosys.irs.InfyGoBootBookingMSApplication.main(InfyGoBootBookingMSApplication.java:14) [classes/:na]
